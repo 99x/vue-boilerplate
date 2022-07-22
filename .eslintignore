@@ -1,0 +1,6 @@
+build/*.js
+config/*.js
+src/test/js/unit/coverage
+node_modules/
+tests/e2e/reports/
+shims-vue.d.ts
