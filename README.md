@@ -21,9 +21,16 @@ yarn test:unit
 ```
 
 ### Run your end-to-end tests
+## Open Mode
 ```
-yarn test:e2e
+yarn test:e2e.open
 ```
+
+## Headless Mode - Will Generate Reports at the end of tests
+```
+yarn test:e2e.run
+```
+
 
 ### Lints and fixes files
 ```
