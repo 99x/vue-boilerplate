@@ -5,9 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "test:e2e.run": "chmod +x ./cypress.run.sh && ./cypress.run.sh",
+    "test:e2e.open": "vue-cli-service test:e2e"
   },
   "dependencies": {
     "core-js": "^3.23.5",

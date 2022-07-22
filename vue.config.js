@@ -43,21 +43,19 @@ module.exports = defineConfig({
           }
         }),
         new CompressionPlugin({
-          filename: '[path].br[query]',
           algorithm: 'brotliCompress',
           compressionOptions: {level: 11},
           minRatio: 1,
           deleteOriginalAssets: false
         }),
         new CompressionPlugin({
-          filename: '[path].gz[query]',
           algorithm: 'gzip',
           minRatio: 1
         })
       ]
       config.optimization = {
         minimize: true,
-        moduleIds: 'hashed',
+        moduleIds: 'deterministic',
         runtimeChunk: 'single',
         splitChunks: {
           chunks: 'async',
